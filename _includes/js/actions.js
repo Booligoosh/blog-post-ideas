@@ -14,11 +14,13 @@ function pass(IDEA_ID) {
 
 function seeDetails(IDEA_ID) {
     const IDEA_ELEM = document.getElementById(IDEA_ID);
-    IDEA_ELEM.querySelector('.see-details').removeAttribute('href');
-    
-    IDEA_ELEM.style.transform = 'rotateY(180deg) scaleX(-1)';
+    flipCard(IDEA_ELEM);
+}
+
+function flipCard(CARD) {
+    CARD.style.transform = 'rotateY(180deg) scaleX(-1)';
     setTimeout(function(){
-        IDEA_ELEM.querySelector('.front').style.display = 'none';
-        IDEA_ELEM.querySelector('.back').style.display = 'flex';
-    },500)
+        CARD.querySelector('.front').style.display = 'none';
+        CARD.querySelector('.back').style.display = 'flex';
+    },500);
 }

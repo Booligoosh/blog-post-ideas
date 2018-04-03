@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<main>
+    <section class="blog-post-ideas-wrapper">
+            <section class="blog-post-idea" id="add" style="opacity: 1">
+                <div class="front">
+                    <div class="actions">
+                        <a href="javascript:seeDetails('{{idea.id}}')" class="see-details"><i class="icon-arrow-with-circle-left"></i> Next</a>
+                        <a href="javascript:pass('{{idea.id}}')" class="pass">Cancel <i class="icon-trash"></i></a>
+                    </div>
+                    <textarea placeholder="Type your title here." maxlength="100"></textarea>
+                </div>
+                <div class="back">
+                    <div class="actions">
+                        <a href="javascript:claim('{{idea.id}}')" class="claim"><i class="icon-feather"></i> Claim</a>
+                        <a href="javascript:pass('{{idea.id}}')" class="pass">Pass <i class="icon-trash"></i></a>
+                    </div>
+                    <h2>{{idea.title}}</h2>
+                    {{idea.content}}
+                </div>
+            </section>
+    </section>
+</main>

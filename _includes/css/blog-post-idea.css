@@ -2,9 +2,10 @@
     /* cursor: pointer; */
     background: white;
     color: #aaa;
-    margin: 3em;
+    margin: 3em auto;
     padding: 5em;
     width: 80%;
+    min-height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
     height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
     border-radius: 1em;
     box-shadow: 0 0 5em rgba(85, 85, 85, 0.35); /* #555 */
@@ -38,7 +39,7 @@
     display: none;
 }
 
-.blog-post-idea .front h2 {
+.blog-post-idea .front h2, .blog-post-idea .front textarea {
     align-self: center;
     font-family: "Playfair Display", serif;
     font-weight: 900;
@@ -71,4 +72,25 @@
 
 .blog-post-idea .actions a.pass {
     color: hsl(0, 0%, 40%);
+}
+
+/* ADD PAGE */
+.blog-post-idea#add {
+    /* height: auto; */
+}
+
+.blog-post-idea#add .front textarea {
+    color: #aaa;
+    border: none;
+    border-bottom: 1px solid;
+    resize: none;
+    height: 1.5em;
+}
+
+.blog-post-idea#add .front textarea::placeholder {
+    color: #aaa;
+}
+
+.blog-post-idea#add .front textarea:focus {
+    outline: none;
 }
