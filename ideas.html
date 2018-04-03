@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% include html/header.html %}
+<main>
+    <section class="blog-post-ideas-wrapper">
+        {% for idea in site.ideas %}
+            <section class="blog-post-idea" id="{{idea.id}}" {% if forloop.index == 1 %}style="opacity: 1"{% endif %}>
+                <div class="front">
+                    <div class="actions">
+                        <a href="javascript:seeDetails('{{idea.id}}')" class="see-details"><i class="icon-check"></i> See Details</a>
+                        <a href="javascript:pass('{{idea.id}}')" class="pass">Pass <i class="icon-cross"></i></a>
+                    </div>
+                    <h2>{{idea.title}}</h2>
+                </div>
+                <div class="back">
+                    <div class="actions">
+                        <a href="javascript:claim('{{idea.id}}')" class="claim"><i class="icon-check"></i> Claim! &#x1F389;</a>
+                        <a href="javascript:pass('{{idea.id}}')" class="pass">Pass <i class="icon-cross"></i></a>
+                    </div>
+                    <h2>{{idea.title}}</h2>
+                    {{idea.content}}
+                </div>
+            </section>
+        {% endfor %}
+    </section>
+</main>
