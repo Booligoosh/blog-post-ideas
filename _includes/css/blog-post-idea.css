@@ -84,11 +84,12 @@
     border: none;
     border-bottom: 1px solid;
     resize: none;
-    height: 1.5em;
+    /* height: 1.5em; */
+    height: 100%;
 }
 
 .blog-post-idea#add .front textarea::placeholder {
-    color: #aaa;
+    color: #ccc;
 }
 
 .blog-post-idea#add .front textarea:focus {
