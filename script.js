@@ -19,6 +19,6 @@ function seeDetails(IDEA_ID) {
     IDEA_ELEM.style.transform = 'rotateY(180deg) scaleX(-1)';
     setTimeout(function(){
         IDEA_ELEM.querySelector('.front').style.display = 'none';
-        IDEA_ELEM.querySelector('.back').style.display = 'block';
+        IDEA_ELEM.querySelector('.back').style.display = 'flex';
     },500)
 }
