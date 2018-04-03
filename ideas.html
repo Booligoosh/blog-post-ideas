@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% include html/header.html %}
 <main>
     <section class="blog-post-ideas-wrapper">
         {% for idea in site.ideas %}
@@ -15,7 +14,7 @@ layout: default
                 </div>
                 <div class="back">
                     <div class="actions">
-                        <a href="javascript:claim('{{idea.id}}')" class="claim"><i class="icon-feather"></i> Claim<!--! &#x1F389;--></a>
+                        <a href="javascript:claim('{{idea.id}}')" class="claim"><i class="icon-feather"></i> Claim</a>
                         <a href="javascript:pass('{{idea.id}}')" class="pass">Pass <i class="icon-trash"></i></a>
                     </div>
                     <h2>{{idea.title}}</h2>
