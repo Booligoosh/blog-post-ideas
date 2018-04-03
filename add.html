@@ -6,21 +6,19 @@ layout: default
             <form class="blog-post-idea" id="add" style="opacity: 1"  method="POST" action="https://api.staticman.net/v2/entry/Booligoosh/blog-post-ideas/master/ideas">
                 <div class="front">
                     <div class="actions">
-                        <a href="javascript:seeDetails('{{idea.id}}')" class="see-details"><i class="icon-arrow-with-circle-left"></i> Next</a>
+                        <a href="javascript:flipCard(document.getElementById('add'))" class="see-details"><i class="icon-arrow-with-circle-left"></i> Next</a>
                         <a href="javascript:pass('{{idea.id}}')" class="pass">Cancel <i class="icon-trash"></i></a>
                     </div>
                     <input name="options[redirect]" type="hidden" value="https://booligoosh.github.io/blog-post-ideas/thanks">
-                    <button type="submit">Submit</button>
-                    <input name="fields[body]" type="text">
                     <textarea name="fields[title]" placeholder="Type your title here." maxlength="100"></textarea>
                 </div>
                 <div class="back">
                     <div class="actions">
-                        <a href="javascript:claim('{{idea.id}}')" class="claim"><i class="icon-feather"></i> Claim</a>
+                        <button type="submit" class="claim"><i class="icon-feather"></i> Cancel</button>
                         <a href="javascript:pass('{{idea.id}}')" class="pass">Pass <i class="icon-trash"></i></a>
                     </div>
-                    <h2>{{idea.title}}</h2>
-                    {{idea.content}}
+                    <h2>Now type your content!</h2>
+                    <textarea name="fields[body]" placeholder="Now type your content!"></textarea>
                 </div>
             </form>
     </section>

@@ -60,18 +60,25 @@
     justify-content: space-between;
 }
 
-.blog-post-idea .actions a {
+.blog-post-idea .actions > * {
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.blog-post-idea .actions a.see-details, .blog-post-idea .actions a.claim {
+.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim {
     color: hsl(143, 100%, 40%);
 }
 
-.blog-post-idea .actions a.pass {
+.blog-post-idea .actions > *.pass {
     color: hsl(0, 0%, 40%);
+}
+
+.blog-post-idea .actions > button {
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 /* ADD PAGE */
@@ -79,7 +86,7 @@
     /* height: auto; */
 }
 
-.blog-post-idea#add .front textarea {
+.blog-post-idea#add textarea {
     color: #aaa;
     border: none;
     border-bottom: 1px solid;
@@ -88,10 +95,10 @@
     height: 100%;
 }
 
-.blog-post-idea#add .front textarea::placeholder {
+.blog-post-idea#add textarea::placeholder {
     color: #ccc;
 }
 
-.blog-post-idea#add .front textarea:focus {
+.blog-post-idea#add textarea:focus, .blog-post-idea .actions > button:focus {
     outline: none;
 }
