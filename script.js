@@ -16,15 +16,9 @@ function seeDetails(IDEA_ID) {
     const IDEA_ELEM = document.getElementById(IDEA_ID);
     IDEA_ELEM.querySelector('.see-details').removeAttribute('href');
     
-    //IDEA_ELEM.style.transform = 'rotateY(180deg) scaleX(-1)';
-    IDEA_ELEM.querySelector('.front').style.top = '-100%';
-    IDEA_ELEM.querySelector('.front').style.opacity = 0;
-    IDEA_ELEM.querySelector('.front').style.pointerEvents = 'none';
-    IDEA_ELEM.querySelector('.back').style.top = '0';
-    IDEA_ELEM.querySelector('.back').style.opacity = 1;
-    IDEA_ELEM.querySelector('.back').style.pointerEvents = 'unset';
-    
-    const TOP = IDEA_ELEM.style.top == '' ? '0px' : IDEA_ELEM.style.top;
-    IDEA_ELEM.style.top = `calc(${TOP} - 4rem)`;
-    IDEA_ELEM.classList.add('open');
+    IDEA_ELEM.style.transform = 'rotateY(180deg) scaleX(-1)';
+    setTimeout(function(){
+        IDEA_ELEM.querySelector('.front').style.display = 'none';
+        IDEA_ELEM.querySelector('.back').style.display = 'block';
+    },500)
 }

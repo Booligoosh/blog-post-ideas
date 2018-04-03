@@ -3,6 +3,7 @@
     background: white;
     color: #aaa;
     margin: 3em;
+    padding: 5em;
     width: 80%;
     height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
     border-radius: 1em;
@@ -13,7 +14,6 @@
     left: 0;
     opacity: 0;
     top: 0;
-    overflow: hidden;
 }
 
 .blog-post-idea.open {
@@ -24,29 +24,18 @@
 }
 
 .blog-post-idea .front, .blog-post-idea .back {
-    position: absolute;
     height: 100%;
     width: 100%;
-    padding: 5em;
     display: flex;
     flex-wrap: wrap;
-    transition: all, 1s;
-    transition-timing-function: ease-in-out;
 }
 
 .blog-post-idea .front > *, .blog-post-idea .back > * {
     width: 100%;
 }
 
-.blog-post-idea .front {
-    top: 0;
-    opacity: 1;
-}
-
 .blog-post-idea .back {
-    top: 100%;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
 
 .blog-post-idea .front h2 {
