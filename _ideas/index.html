@@ -4,6 +4,7 @@ layout: default
 <main>
     <section class="blog-post-ideas-wrapper">
         {% for idea in site.ideas %}
+            {% unless idea.title == "Index" %}
             <section class="blog-post-idea" id="{{idea._id}}" {% if forloop.index == 1 %}style="opacity: 1"{% endif %}>
                 <div class="front">
                     <div class="actions three-items">
@@ -23,6 +24,7 @@ layout: default
                     <p>{{idea.content}}</p>
                 </div>
             </section>
+            {% endunless %}
         {% endfor %}
     </section>
 </main>
