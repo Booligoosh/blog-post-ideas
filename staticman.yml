@@ -26,9 +26,9 @@ ideas:
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
   format: "frontmatter"
-    extension: "md"
-    transforms:
-        body: "frontmatterContent"
+  extension: "md"
+  transforms:
+    body: "frontmatterContent"
 
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
