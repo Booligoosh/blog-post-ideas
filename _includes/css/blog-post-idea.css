@@ -15,6 +15,7 @@
     left: 0;
     opacity: 0;
     top: 0;
+    text-align: center;
 }
 
 .blog-post-idea.open {
@@ -47,6 +48,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 900;
     font-size: 5em;
+    text-align: center;
     margin: 0;
     transition: color, .25s;
 }
@@ -60,12 +62,17 @@
 .blog-post-idea .back p, .blog-post-idea#add .back textarea {
     font-size: 1.5em;
     font-family: "IBM Plex Sans", sans-serif;
+    text-align: justify;
 }
 
 .blog-post-idea .actions {
     align-self: flex-start;
     display: flex;
     justify-content: space-between;
+}
+
+.blog-post-idea .actions.three-items {
+    justify-content: space-evenly;
 }
 
 .blog-post-idea .actions > * {
@@ -76,6 +83,10 @@
 
 .blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit {
     color: hsl(143, 100%, 40%);
+}
+
+.blog-post-idea .actions > *.follow {
+    color: hsl(33, 100%, 40%);
 }
 
 .blog-post-idea .actions > *.pass, .blog-post-idea .actions > *.add-cancel, .blog-post-idea .actions > *.add-back {

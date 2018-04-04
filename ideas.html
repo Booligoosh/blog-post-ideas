@@ -7,15 +7,17 @@ layout: default
             {% assign idea = idea_hash[1] %} <!-- IDK why I need to do this, but I got it from: https://jekyllrb.com/docs/datafiles/#example-organizations -->
             <section class="blog-post-idea" id="{{idea._id}}" {% if forloop.index == 1 %}style="opacity: 1"{% endif %}>
                 <div class="front">
-                    <div class="actions">
-                        <a href="javascript:seeDetails('{{idea._id}}')" class="see-details"><i class="icon-eye"></i> See Details</a>
+                    <div class="actions three-items">
+                        <a href="javascript:seeDetails('{{idea._id}}')" class="see-details"><i class="icon-eye"></i> Details / Claim</a>
+                        <a href="javascript:follow('{{idea._id}}')" class="follow">Follow <i class="icon-add-user"></i></a>
                         <a href="javascript:pass('{{idea._id}}')" class="pass">Pass <i class="icon-trash"></i></a>
                     </div>
                     <h2>{{idea.title}}</h2>
                 </div>
                 <div class="back">
-                    <div class="actions">
+                    <div class="actions three-items">
                         <a href="javascript:claim('{{idea._id}}')" class="claim"><i class="icon-feather"></i> Claim</a>
+                        <a href="javascript:follow('{{idea._id}}')" class="follow">Follow <i class="icon-add-user"></i></a>
                         <a href="javascript:pass('{{idea._id}}')" class="pass">Pass <i class="icon-trash"></i></a>
                     </div>
                     <h2>{{idea.title}}</h2>
