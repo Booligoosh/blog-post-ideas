@@ -16,7 +16,7 @@ ideas:
   branch: "master"
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
-  commitMessage: "[AUTOMATED COMMIT] Add blog post idea {@timestamp}"
+  commitMessage: "[AUTOMATED COMMIT] Add blog post idea ({@_id})"
 
   # (*) REQUIRED
   #
