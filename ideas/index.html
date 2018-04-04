@@ -3,8 +3,7 @@ layout: default
 ---
 <main>
     <section class="blog-post-ideas-wrapper">
-        {% for idea_hash in site.data.ideas %}
-            {% assign idea = idea_hash[1] %} <!-- IDK why I need to do this, but I got it from: https://jekyllrb.com/docs/datafiles/#example-organizations -->
+        {% for idea in site.ideas %}
             <section class="blog-post-idea" id="{{idea._id}}" {% if forloop.index == 1 %}style="opacity: 1"{% endif %}>
                 <div class="front">
                     <div class="actions three-items">
@@ -21,7 +20,7 @@ layout: default
                         <a href="javascript:pass('{{idea._id}}')" class="pass">Pass <i class="icon-trash"></i></a>
                     </div>
                     <h2>{{idea.title}}</h2>
-                    <p>{{idea.body}}</p>
+                    <p>{{idea.content}}</p>
                 </div>
             </section>
         {% endfor %}

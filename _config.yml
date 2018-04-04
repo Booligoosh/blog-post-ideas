@@ -9,3 +9,7 @@ baseurl:          ''
 gems:
   - jekyll-feed
   - jekyll-sitemap # leave at the end
+
+collections:
+  ideas:
+    output: true
