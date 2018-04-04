@@ -82,11 +82,11 @@
     color: hsl(0, 0%, 40%);
 }
 
-.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit, .blog-post-idea .actions > *.add-more-ideas, .blog-post-idea a.btn.add-idea {
+.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit, .blog-post-idea .actions > *.add-more-ideas, .blog-post-idea .actions > *.add-idea {
     color: hsl(143, 100%, 40%);
 }
 
-.blog-post-idea .actions > *.follow {
+.blog-post-idea .actions > *.follow, .blog-post-idea .actions > *.see-my-idea, .blog-post-idea .actions > *.view-ideas-again {
     color: hsl(33, 100%, 40%);
 }
 
@@ -95,11 +95,6 @@
     padding: 0;
     font-family: inherit;
     cursor: pointer;
-}
-
-.blog-post-idea#end a.btn {
-    width: auto;
-    margin: 1em auto;
 }
 
 /* ADD PAGE */

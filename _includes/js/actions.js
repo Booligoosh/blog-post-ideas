@@ -20,11 +20,16 @@ function pass(ID) {
     }
     
     window.history.pushState('ideas', '{{page.title}}', '{{site.baseurl}}/ideas');
-    if(localStorage.passedIds === undefined) {
+    if(localStorage.passedIds === undefined || localStorage.passedIds === '') {
         localStorage.passedIds = ID;
     } else {
         localStorage.passedIds = `${localStorage.passedIds},${ID}`;
     }
+}
+
+function resetPasses() {
+    localStorage.passedIds = '';
+    window.location.reload();
 }
 
 function seeDetails(ID) {
