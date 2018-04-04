@@ -4,7 +4,7 @@ title:            'Bloggy'
 tagline:          'Blog post ideas, for free.'
 description:      ''
 url:              
-baseurl:          ''
+baseurl:          '/blog-post-ideas'
 
 gems:
   - jekyll-feed
