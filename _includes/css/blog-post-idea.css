@@ -75,14 +75,14 @@
     justify-content: space-evenly;
 }
 
-.blog-post-idea .actions > * {
+.blog-post-idea .actions > *, .blog-post-idea a.btn {
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
     color: hsl(0, 0%, 40%);
 }
 
-.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit, .blog-post-idea .actions > *.add-more-ideas {
+.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit, .blog-post-idea .actions > *.add-more-ideas, .blog-post-idea a.btn.add-idea {
     color: hsl(143, 100%, 40%);
 }
 
@@ -95,6 +95,11 @@
     padding: 0;
     font-family: inherit;
     cursor: pointer;
+}
+
+.blog-post-idea#end a.btn {
+    width: auto;
+    margin: 1em auto;
 }
 
 /* ADD PAGE */
