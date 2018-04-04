@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<main>
+    <section class="blog-post-ideas-wrapper">
+            <section class="blog-post-idea" id="{{page._id}}" style="opacity: 1">
+                <div class="front">
+                    <div class="actions several-items">
+                        <a href="javascript:seeDetails('{{page._id}}')" class="see-details"><i class="icon-eye"></i> Details / Claim</a>
+                        <a href="javascript:follow('{{page._id}}')" class="follow">Follow <i class="icon-add-user"></i></a>
+                        <a href="{{site.baseurl}}/ideas" class="see-other-ideas">Other ideas <i class="icon-list"></i></a>
+                    </div>
+                    <h2>{{page.title}}</h2>
+                </div>
+                <div class="back">
+                    <div class="actions several-items">
+                        <a href="javascript:claim('{{page._id}}')" class="claim"><i class="icon-feather"></i> Claim</a>
+                        <a href="javascript:follow('{{page._id}}')" class="follow">Follow <i class="icon-add-user"></i></a>
+                        <a href="{{site.baseurl}}/ideas" class="see-other-ideas">Other ideas <i class="icon-list"></i></a>
+                    </div>
+                    <h2>{{page.title}}</h2>
+                    <p>{{page.content}}</p>
+                </div>
+            </section>
+    </section>
+</main>

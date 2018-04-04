@@ -71,7 +71,7 @@
     justify-content: space-between;
 }
 
-.blog-post-idea .actions.three-items {
+.blog-post-idea .actions.several-items {
     justify-content: space-evenly;
 }
 
@@ -79,18 +79,15 @@
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
+    color: hsl(0, 0%, 40%);
 }
 
-.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit {
+.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit, .blog-post-idea .actions > *.add-more-ideas {
     color: hsl(143, 100%, 40%);
 }
 
 .blog-post-idea .actions > *.follow {
     color: hsl(33, 100%, 40%);
-}
-
-.blog-post-idea .actions > *.pass, .blog-post-idea .actions > *.add-cancel, .blog-post-idea .actions > *.add-back {
-    color: hsl(0, 0%, 40%);
 }
 
 .blog-post-idea .actions > button {

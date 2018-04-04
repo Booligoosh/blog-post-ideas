@@ -1,13 +1,14 @@
 ---
 layout: default
+title: Blog Post Ideas
 ---
 <main>
     <section class="blog-post-ideas-wrapper">
         {% for idea in site.ideas %}
-            {% unless idea.title == "Index" %}
+            {% unless idea.title == page.title %}
             <section class="blog-post-idea" id="{{idea._id}}" {% if forloop.index == 1 %}style="opacity: 1"{% endif %}>
                 <div class="front">
-                    <div class="actions three-items">
+                    <div class="actions several-items">
                         <a href="javascript:seeDetails('{{idea._id}}')" class="see-details"><i class="icon-eye"></i> Details / Claim</a>
                         <a href="javascript:follow('{{idea._id}}')" class="follow">Follow <i class="icon-add-user"></i></a>
                         <a href="javascript:pass('{{idea._id}}')" class="pass">Pass <i class="icon-trash"></i></a>
@@ -15,7 +16,7 @@ layout: default
                     <h2>{{idea.title}}</h2>
                 </div>
                 <div class="back">
-                    <div class="actions three-items">
+                    <div class="actions several-items">
                         <a href="javascript:claim('{{idea._id}}')" class="claim"><i class="icon-feather"></i> Claim</a>
                         <a href="javascript:follow('{{idea._id}}')" class="follow">Follow <i class="icon-add-user"></i></a>
                         <a href="javascript:pass('{{idea._id}}')" class="pass">Pass <i class="icon-trash"></i></a>

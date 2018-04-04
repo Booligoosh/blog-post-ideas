@@ -13,3 +13,10 @@ gems:
 collections:
   ideas:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: ideas
+    values:
+      layout: idea

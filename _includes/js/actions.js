@@ -18,10 +18,13 @@ function pass(ID) {
             IDEA_ELEMS[i].style.top = (Number(IDEA_ELEMS[i].style.top.replace(/vh/,'')) - 100) + 'vh';
         }
     }
+    
+    window.history.pushState('ideas', '{{page.title}}', `{{site.baseurl}}/ideas/`);
 }
 
 function seeDetails(ID) {
     flipCard(document.getElementById(ID), true);
+    window.history.pushState(ID, document.getElementById(ID).querySelector('h2').innerHTML, `{{site.baseurl}}/ideas/${ID}`);
 }
 
 function addNext(ID) {
