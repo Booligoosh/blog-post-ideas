@@ -4,6 +4,7 @@
     color: #aaa;
     margin: 3em auto;
     padding: 5em;
+    padding-bottom: 0;
     width: 80%;
     min-height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
     height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
@@ -26,6 +27,7 @@
 
 .blog-post-idea .front, .blog-post-idea .back {
     height: 100%;
+    overflow-y: scroll;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
