@@ -19,7 +19,7 @@ function pass(ID) {
         }
     }
     
-    window.history.pushState('ideas', '{{page.title}}', `{{site.baseurl}}/ideas/`);
+    window.history.pushState('ideas', '{{page.title}}', '{{site.baseurl}}/ideas');
     if(localStorage.passedIds === undefined) {
         localStorage.passedIds = ID;
     } else {
