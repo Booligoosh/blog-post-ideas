@@ -51,7 +51,12 @@
 .blog-post-idea .back h2 {
     font-family: "Playfair Display", serif;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 3em;
+}
+
+.blog-post-idea .back p, .blog-post-idea#add .back textarea {
+    font-size: 1.5em;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .blog-post-idea .actions {
@@ -66,11 +71,11 @@
     text-transform: uppercase;
 }
 
-.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim {
+.blog-post-idea .actions > *.see-details, .blog-post-idea .actions > *.claim, .blog-post-idea .actions > *.add-next, .blog-post-idea .actions > *.add-submit {
     color: hsl(143, 100%, 40%);
 }
 
-.blog-post-idea .actions > *.pass {
+.blog-post-idea .actions > *.pass, .blog-post-idea .actions > *.add-cancel, .blog-post-idea .actions > *.add-back {
     color: hsl(0, 0%, 40%);
 }
 
