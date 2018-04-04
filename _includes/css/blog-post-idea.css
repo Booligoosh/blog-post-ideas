@@ -3,8 +3,7 @@
     background: white;
     color: #aaa;
     margin: 3em auto;
-    padding: 5em;
-    padding-bottom: 0;
+    padding: 0 5em;
     width: 80%;
     min-height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
     height: calc(100vh - 4rem - 3em + 1em); /* screen height - header height - margin-top + border-radius height */
@@ -31,6 +30,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
+    padding: 5em 0;
 }
 
 .blog-post-idea .front > *, .blog-post-idea .back > * {
